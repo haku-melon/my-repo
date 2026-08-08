@@ -1,0 +1,52 @@
+﻿static int Add(int a, int b)//addは足し算をする関数です。
+                            //staticとは、メソッドをそのまま呼び出すことができる。
+{//returnは、関数の処理結果を返すためのキーワードです。
+    return a + b;
+    //この関数は、2つの整数を受け取り、それらの合計を返す関数です。
+}
+int result = Add(10, 20);
+Console.WriteLine(result);
+
+
+int Subtract(int a, int b) //subtractは引き算をする関数です。
+{
+    return a - b;
+}
+int result1 = Subtract(20, 10);
+Console.WriteLine(result1);
+
+
+int Multiply(int a, int b) //multiplyは掛け算をする関数です。
+{
+    return a * b;
+}
+int result2 = Multiply(10, 20);
+Console.WriteLine(result2);
+
+int Divide(int a, int b) //divideは割り算をする関数です。
+{
+    return a / b;
+}
+int result3 = Divide(20, 10);
+Console.WriteLine(result3);
+
+int Modulus(int a, int b) //modulusは余りを求める関数です。
+{
+    return a % b;
+}
+int result4 = Modulus(20, 10);
+Console.WriteLine(result4);
+
+string greet ()
+{
+    return "Hello, World!";
+}
+Console.WriteLine(greet);
+
+/*Greetメソッドを作る
+↓
+helloを返す
+↓
+Greet()を呼び出す
+↓
+Console.WriteLineで表示*/
