@@ -1,0 +1,9 @@
+GameObject　：ゲームの空間の物体（Player,Enemy,Cube,Camera,PickUpObjectなど)　Hiearchyにあるもの（Scene存在)
+Component　 ：RigitBodyなど、GameObjectに機能を持たせるもの
+
+Transform「データを別の形式や構造に変換する操作」,
+Mesh Renderer「3Dオブジェクトのメッシュを描画する」,
+Box Collider「3Dオブジェクトの衝突判定を行うためのコンポーネントで、立方体の形状」,
+RigitBody「3Dオブジェクトに重力の概念を付与する」
+
+Prefab　　　：GameObjectをテンプレートとして利用できる形に保存。
