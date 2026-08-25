@@ -1,4 +1,24 @@
 ハイスコアのリセットボタンの追加と、敵の種類を3種類に増やした。
+ランダムに敵を出現させるコード
+
+    GameObject enemyToSpawn;
+
+    if (randomValue < 60f)//60%の確率で通常の敵を生成
+    {
+        enemyToSpawn = enemyPrefab;
+    }
+    else if (randomValue < 85f)//25%の確率で速い敵を生成
+    {
+        enemyToSpawn = enemyFastPrefab;
+    }
+    else//そのほか
+    {
+        enemyToSpawn = enemyToughPrefab;
+    }
+
+    Instantiate(enemyToSpawn, spawnPosition, Quaternion.identity);
+//Instantiateとは指定したオブジェクトを生成する関数。
+
 ただし、デザインは全くやっていないので改めて、世の中に出回っている作品のすごさを知った。
 まだまだ知らないことがたくさんあるから面白くて楽しい。
 来月のやることの計画を立てる必要がある。
